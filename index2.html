@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BocAutos - Reserva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="img/escudo.png" alt="Escudo Boca" class="escudo">
+            <h1>BocAutos</h1>
+        </div>
+        <nav>
+    <ul>
+        <li><a href="index.html">Volver al inicio</a></li>
+        <li><a href="index.html#vehiculos">Disponibles</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <main class="form-seccion">
+        <h2>Solicitud de reserva</h2>
+        <form action="index.html" method="get">
+            <fieldset>
+                <legend>Datos del lliente</legend>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Juan Roman Riquelme" required>
+
+                <label for="dni">DNI:</label>
+                <input type="number" id="dni" name="dni" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Vehiculo</legend>
+                <label for="auto">Seleccion el modelo:</label>
+                <select id="auto" name="auto">
+                    <option value="subaru">Subaru Impreza</option>
+                    <option value="duna">Fiat Duna</option>
+                    <option value="ford">Ford F150</option>
+                    <option value="hilux">Toyota Hilux</option>
+                    <option value="208">Peugeot 208</option>
+                    <option value="cronos">Fiat Cronos</option>
+                    <option value="ranger">Ford Ranger</option>
+                    <option value="amarok">Volkswagen Amarok</option>
+                    <option value="gol">Volkswagen Gol</option>
+                </select>
+
+                <label for="fecha">Fecha de retiro:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </fieldset>
+
+            <div class="botones-form">
+                <button type="submit" class="btn-confirmar">Confirmar</button>
+                <button type="reset" class="btn-limpiar">Limpiar</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>BocAutos - Pasión Xeneize</p>
+    </footer>
+
+</body>
+</html>
