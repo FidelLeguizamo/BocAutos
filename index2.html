@@ -3,63 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BocAutos - Reserva</title>
+    <title>BocAutos - Reservar</title>
+    <link rel="icon" href="img/escudo.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
         <div class="header-logo">
             <img src="img/escudo.png" alt="Escudo Boca" class="escudo">
             <h1>BocAutos</h1>
         </div>
         <nav>
-    <ul>
-        <li><a href="index.html">Volver al inicio</a></li>
-        <li><a href="index.html#vehiculos">Disponibles</a></li>
-    </ul>
-</nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#vehiculos">Disponibles</a></li>
+                <li><a href="index2.html" class="btn-nav">Reservar Vehiculo</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="form-seccion">
-        <h2>Solicitud de reserva</h2>
-        <form action="index.html" method="get">
-            <fieldset>
-                <legend>Datos del lliente</legend>
-                <label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Juan Roman Riquelme" required>
+    <main class="reserva-main">
+        <section class="form-seccion">
+            <h2>Reserva tu Vehículo</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Juan Roman Riquelme">
 
-                <label for="dni">DNI:</label>
-                <input type="number" id="dni" name="dni" required>
-            </fieldset>
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required placeholder="CarlitoTevez@mail.com">
 
-            <fieldset>
-                <legend>Vehiculo</legend>
-                <label for="auto">Seleccion el modelo:</label>
-                <select id="auto" name="auto">
-                    <option value="subaru">Subaru Impreza</option>
-                    <option value="duna">Fiat Duna</option>
-                    <option value="ford">Ford F150</option>
-                    <option value="hilux">Toyota Hilux</option>
-                    <option value="208">Peugeot 208</option>
-                    <option value="cronos">Fiat Cronos</option>
-                    <option value="ranger">Ford Ranger</option>
-                    <option value="amarok">Volkswagen Amarok</option>
-                    <option value="gol">Volkswagen Gol</option>
-                </select>
+                    <label for="tel">Teléfono de contacto</label>
+                    <input type="tel" id="tel" name="tel" required placeholder="121 212 1212">
+                </fieldset>
 
-                <label for="fecha">Fecha de retiro:</label>
-                <input type="date" id="fecha" name="fecha" required>
-            </fieldset>
+                <fieldset>
+                    <legend>Detalles del Alquiler</legend>
+                    <label for="auto">Seleccioná el Vehículo</label>
+                    <select id="auto" name="auto">
+                        <option value="subaru">Subaru Impreza WRX</option>
+                        <option value="duna">Fiat Duna</option>
+                        <option value="f150">Ford F150</option>
+                        <option value="hilux">Toyota Hilux</option>
+                        <option value="208">Peugeot 208</option>
+                        <option value="cronos">Fiat Cronos</option>
+                        <option value="ranger">Ford Ranger</option>
+                        <option value="amarok">Volkswagen Amarok</option>
+                        <option value="gol">Volkswagen Gol</option>
+                    </select>
 
-            <div class="botones-form">
-                <button type="submit" class="btn-confirmar">Confirmar</button>
-                <button type="reset" class="btn-limpiar">Limpiar</button>
-            </div>
-        </form>
+                    <label for="fecha-inicio">Fecha de Retiro</label>
+                    <input type="date" id="fecha-inicio" name="fecha-inicio" required>
+
+                    <label for="dias">Cantidad de días</label>
+                    <input type="number" id="dias" name="dias" min="1" max="30" required>
+                </fieldset>
+
+                <div class="botones-form">
+                    <button type="submit" class="btn-confirmar">Confirmar Reserva</button>
+                    <button type="reset" class="btn-limpiar">Limpiar Formulario</button>
+                </div>
+            </form>
+        </section>
     </main>
 
     <footer>
-        <p>BocAutos - Pasión Xeneize</p>
+        <div class="footer-content">
+            <p>BocAutos - Brandsen 805, La Boca</p>
+            <div class="contactos">
+                <p><strong>Contactos:</strong></p>
+                <p>Teléfono: 77200003</p>
+                <p>Redes Sociales: Instagram: @BocAutos | Facebook: bocautos_12</p>
+                <p>Mail: Bocautos12@yahoo.com</p>
+            </div>
+        </div>
     </footer>
 
 </body>
