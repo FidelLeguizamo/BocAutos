@@ -97,7 +97,7 @@ nav a.btn-nav:hover {
   text-align: center;
 }
 
-.grid-autos {
+.grilla-autos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -290,7 +290,7 @@ footer {
 }
 
 @media (max-width: 900px) {
-  .grid-autos {
+  .grilla-autos {
     flex-direction: column;
   }
 
